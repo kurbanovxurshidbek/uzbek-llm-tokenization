@@ -64,4 +64,6 @@ These are outputs copied from the Colab runs:
 
 ## Citation
 
-If you use this code or the annotations, please cite the paper (the reference will be added on publication).
+If you use this code or the annotations, please cite the paper (the reference will be added on publication) and this repository:
+
+> K. Kurbanov, "uzbek-llm-tokenization," GitHub repository, 2026. https://github.com/kurbanovxurshidbek/uzbek-llm-tokenization
