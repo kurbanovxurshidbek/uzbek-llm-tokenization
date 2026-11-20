@@ -1,0 +1,128 @@
+GOLD: /content/drive/MyDrive/uz_tokenization/stage5/morph_gold_v2.csv | words used: {'Cyrillic': 499, 'Latin': 500}
+Offset integrity failures: {'Qwen2.5-1.5B': 0, 'Llama-3.2-1B': 0, 'Gemma-2-2B': 0}
+
+Cyrillic words dropped: ['w457']
+
+=== Example segmentations ===
+Latin    gold oʻzbekiston-da             Qwen2.5-1.5B: o|ʻ|zbek|ist|onda   Llama-3.2-1B: o|ʻ|zbek|ist|onda   Gemma-2-2B: o|ʻ|z|bek|ist|onda
+Cyrillic gold ўзбекистон-да              Qwen2.5-1.5B: ў|з|б|ек|ист|он|да   Llama-3.2-1B: ў|з|б|ек|ист|он|да   Gemma-2-2B: ў|збе|ки|сто|нда
+Latin    gold koʻr-sat-il-gan            Qwen2.5-1.5B: ko|ʻ|rs|at|il|gan   Llama-3.2-1B: ko|ʻ|rs|at|il|gan   Gemma-2-2B: ko|ʻ|rs|atil|gan
+Cyrillic gold кўр-сат-ил-ган             Qwen2.5-1.5B: к|ў|р|с|ат|ил|ган   Llama-3.2-1B: к|ў|р|с|ат|ил|ган   Gemma-2-2B: к|ў|р|са|тил|ган
+Latin    gold xususiyat-lar-i-ni         Qwen2.5-1.5B: x|us|us|iy|at|lar|ini   Llama-3.2-1B: x|us|us|iyat|lar|ini   Gemma-2-2B: x|us|usi|yat|lar|ini
+Cyrillic gold хусусият-лар-и-ни          Qwen2.5-1.5B: х|ус|ус|ия|т|л|ар|ин|и   Llama-3.2-1B: х|ус|ус|ия|т|л|ар|ини   Gemma-2-2B: ху|су|си|ят|ла|ри|ни
+
+=== Experiment 3 (point [95% CI]) ===
+               subset   script    tokenizer  n_words         precision            recall                F1         F1_chance
+native+loan (primary)    Latin Qwen2.5-1.5B      453 27.6 [25.1, 29.9] 51.2 [47.3, 54.7] 35.9 [32.9, 38.4] 25.0 [23.9, 25.9]
+native+loan (primary)    Latin Llama-3.2-1B      453 28.8 [26.1, 31.2] 50.8 [47.0, 54.4] 36.8 [33.8, 39.5] 24.8 [23.8, 25.7]
+native+loan (primary)    Latin   Gemma-2-2B      453 30.9 [28.5, 33.4] 48.7 [45.3, 52.3] 37.8 [35.2, 40.5] 23.8 [22.9, 24.6]
+native+loan (primary) Cyrillic Qwen2.5-1.5B      452 22.9 [21.1, 24.4] 57.3 [53.9, 60.7] 32.7 [30.4, 34.6] 29.7 [28.6, 30.9]
+native+loan (primary) Cyrillic Llama-3.2-1B      452 24.3 [22.4, 26.1] 55.6 [51.8, 59.4] 33.8 [31.5, 36.1] 29.0 [27.9, 30.1]
+native+loan (primary) Cyrillic   Gemma-2-2B      452 26.9 [24.7, 29.1] 53.2 [49.5, 56.6] 35.8 [33.1, 38.3] 27.9 [26.9, 29.0]
+              all 500    Latin Qwen2.5-1.5B      500 25.8 [23.6, 28.1] 50.6 [47.1, 54.2] 34.2 [31.6, 36.9] 24.0 [23.0, 25.0]
+              all 500    Latin Llama-3.2-1B      500 26.9 [24.5, 29.3] 50.3 [46.8, 53.8] 35.0 [32.3, 37.8] 23.8 [22.8, 24.8]
+              all 500    Latin   Gemma-2-2B      500 29.3 [26.7, 31.7] 48.6 [44.9, 52.1] 36.5 [33.6, 39.3] 23.0 [22.1, 23.8]
+              all 500 Cyrillic Qwen2.5-1.5B      499 21.5 [19.9, 23.1] 57.6 [54.2, 61.1] 31.3 [29.3, 33.3] 28.3 [27.1, 29.5]
+              all 500 Cyrillic Llama-3.2-1B      499 22.8 [21.1, 24.4] 55.9 [52.2, 59.3] 32.4 [30.2, 34.4] 27.6 [26.5, 28.7]
+              all 500 Cyrillic   Gemma-2-2B      499 25.4 [23.4, 27.4] 53.5 [49.9, 56.9] 34.5 [32.0, 36.8] 26.7 [25.6, 27.8]
+               subset   script    tokenizer      exact_match  morph_consistent     tokens_per_morph  spearman_ntok_vs_nmorph
+native+loan (primary)    Latin Qwen2.5-1.5B   7.5 [5.1, 9.9]   9.5 [6.6, 12.1] 1.504 [1.452, 1.554]                    0.643
+native+loan (primary)    Latin Llama-3.2-1B  9.5 [6.8, 12.1]  12.1 [9.1, 15.2] 1.509 [1.459, 1.561]                    0.623
+native+loan (primary)    Latin   Gemma-2-2B 10.8 [7.9, 13.7] 13.5 [10.4, 16.3] 1.340 [1.295, 1.386]                    0.641
+native+loan (primary) Cyrillic Qwen2.5-1.5B   2.4 [1.1, 4.0]    2.4 [1.1, 4.0] 1.950 [1.892, 2.007]                    0.680
+native+loan (primary) Cyrillic Llama-3.2-1B   3.3 [1.8, 5.1]    3.8 [2.2, 5.8] 1.876 [1.812, 1.936]                    0.632
+native+loan (primary) Cyrillic   Gemma-2-2B   4.9 [3.1, 7.1]    4.9 [3.1, 7.1] 1.591 [1.540, 1.638]                    0.678
+              all 500    Latin Qwen2.5-1.5B  7.6 [5.4, 10.0]   9.4 [7.0, 12.0] 1.546 [1.501, 1.601]                    0.627
+              all 500    Latin Llama-3.2-1B  9.4 [7.2, 12.2]  11.8 [9.2, 14.6] 1.554 [1.505, 1.612]                    0.603
+              all 500    Latin   Gemma-2-2B 11.4 [8.8, 14.2] 13.8 [11.0, 17.0] 1.377 [1.333, 1.427]                    0.627
+              all 500 Cyrillic Qwen2.5-1.5B   2.2 [1.0, 3.6]    2.2 [1.0, 3.6] 2.019 [1.961, 2.081]                    0.653
+              all 500 Cyrillic Llama-3.2-1B   3.0 [1.6, 4.6]    3.4 [2.0, 5.2] 1.946 [1.879, 2.011]                    0.599
+              all 500 Cyrillic   Gemma-2-2B   4.6 [3.0, 6.4]    4.6 [3.0, 6.4] 1.646 [1.594, 1.702]                    0.649
+
+=== Paired ΔF1 ===
+  script                  comparison  delta_F1_pp  ci_lo  ci_hi
+   Latin   Gemma-2-2B − Qwen2.5-1.5B         1.94  -0.58   4.75
+   Latin   Gemma-2-2B − Llama-3.2-1B         1.05  -1.58   3.73
+   Latin Llama-3.2-1B − Qwen2.5-1.5B         0.89   0.48   1.27
+Cyrillic   Gemma-2-2B − Qwen2.5-1.5B         3.04   0.23   5.68
+Cyrillic   Gemma-2-2B − Llama-3.2-1B         1.92  -1.07   4.83
+Cyrillic Llama-3.2-1B − Qwen2.5-1.5B         1.12   0.08   2.09
+
+=== Breakdowns ===
+ breakdown   script           group  n_words  mean_morphs  F1_Qwen2.5-1.5B  tok_per_morph_Qwen2.5-1.5B  F1_Llama-3.2-1B  tok_per_morph_Llama-3.2-1B  F1_Gemma-2-2B  tok_per_morph_Gemma-2-2B
+      band Cyrillic    B1 rank 1–1k      121         1.84             30.0                       1.991             31.1                       1.910           26.4                     1.641
+      band Cyrillic  B2 rank 1k–10k      122         2.24             28.5                       1.967             30.0                       1.883           33.3                     1.593
+      band Cyrillic B3 rank 10k–50k      111         2.78             36.8                       1.942             37.0                       1.880           38.1                     1.612
+      band Cyrillic    B4 rank >50k       98         3.00             33.7                       1.912             35.3                       1.840           41.2                     1.527
+      band    Latin    B1 rank 1–1k      121         1.84             35.3                       1.583             36.4                       1.583           27.9                     1.404
+      band    Latin  B2 rank 1k–10k      122         2.24             34.5                       1.513             35.8                       1.509           34.5                     1.359
+      band    Latin B3 rank 10k–50k      111         2.78             36.3                       1.485             37.4                       1.485           42.7                     1.327
+      band    Latin    B4 rank >50k       99         3.02             36.9                       1.455             37.1                       1.478           41.6                     1.288
+word_class Cyrillic         foreign        8         1.00              NaN                       3.625              NaN                       3.625            NaN                     3.125
+word_class Cyrillic            loan       62         2.00             28.3                       2.169             31.0                       1.976           38.8                     1.621
+word_class Cyrillic          native      390         2.50             33.3                       1.922             34.2                       1.864           35.4                     1.587
+word_class Cyrillic           other        7         1.14              NaN                       2.750              NaN                       2.625            NaN                     2.250
+word_class Cyrillic          proper       32         1.31             13.8                       3.381             14.4                       3.333           17.6                     2.714
+word_class    Latin         foreign        8         1.00              NaN                       1.500              NaN                       1.500            NaN                     1.375
+word_class    Latin            loan       62         2.00             19.4                       1.831             20.5                       1.734           28.9                     1.508
+word_class    Latin          native      391         2.51             38.2                       1.462             39.0                       1.481           38.9                     1.318
+word_class    Latin           other        7         1.14              NaN                       2.125              NaN                       2.250            NaN                     1.875
+word_class    Latin          proper       32         1.31              4.7                       2.571              4.7                       2.619           13.7                     2.262
+
+=== Mean tokens by number of morphemes ===
+                     n  tok_Qwen2.5-1.5B  tok_Llama-3.2-1B  tok_Gemma-2-2B
+script   n_morphs                                                         
+Cyrillic 1          97              3.19              3.08            2.67
+         2         162              4.33              4.16            3.45
+         3         116              5.17              4.94            4.29
+         4          58              6.64              6.52            5.48
+         5          17              7.65              7.24            5.88
+         6           1              9.00              9.00            8.00
+         7           1              8.00              6.00            6.00
+Latin    1          97              2.58              2.54            2.26
+         2         162              3.29              3.26            2.94
+         3         116              4.03              4.09            3.59
+         4          58              5.07              5.10            4.52
+         5          18              5.67              5.94            5.11
+         6           1              8.00              9.00            6.00
+         7           1              6.00              6.00            6.00
+
+=== Gate ===
+{
+  "gold_file": "/content/drive/MyDrive/uz_tokenization/stage5/morph_gold_v2.csv",
+  "gold_words": 500,
+  "words_used": {
+    "Cyrillic": 499,
+    "Latin": 500
+  },
+  "offset_integrity_failures": {
+    "Qwen2.5-1.5B": 0,
+    "Llama-3.2-1B": 0,
+    "Gemma-2-2B": 0
+  },
+  "transliterator_unit_test_failures": 0,
+  "F1_primary": {
+    "Latin | Qwen2.5-1.5B": 35.86,
+    "Latin | Llama-3.2-1B": 36.76,
+    "Latin | Gemma-2-2B": 37.81,
+    "Cyrillic | Qwen2.5-1.5B": 32.72,
+    "Cyrillic | Llama-3.2-1B": 33.83,
+    "Cyrillic | Gemma-2-2B": 35.76
+  },
+  "figures": [
+    "fig_exp3_morph_alignment.pdf",
+    "fig_exp3_morph_alignment.png"
+  ],
+  "packages": {
+    "transformers": "5.22.1",
+    "tokenizers": "0.23.3",
+    "huggingface_hub": "1.33.0",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.0"
+  },
+  "seed": 42,
+  "n_boot": 1000,
+  "timestamp_utc": "2026-11-20T13:26:07.107353+00:00"
+}

@@ -1,0 +1,92 @@
+=== source ===
+                            documents  doc_share_%       words  word_share_%
+source                                                                     
+Web                          3082522        54.68  1003761334          0.26
+Telegram                     1120927        19.88    96246746          0.17
+Uzarchive                     991133        17.58   888996909         -0.21
+National Library              126529         2.24  1825938225         -0.34
+Wikipedia                     122755         2.18    31338159         -0.19
+Ziyonet/Ziyouz                 78113         1.39   852013147         -0.12
+Lex.uz                         74572         1.32    67705063         -0.30
+Tahrirchi                      37971         0.67  1279854718         -0.14
+Academy of Sciences             2014         0.04    11602627          0.19
+Subordinate Organizations        516         0.01     4788233          0.08
+
+=== domain ===
+                               documents  doc_share_%       words  word_share_%
+domain                                                                        
+Law                             2015826        35.76  1506241586          0.05
+Arts and Culture                1095654        19.44  1798357760         -0.09
+Economy and Business             587114        10.42   428917123         -0.01
+Education                        510675         9.06  1024454784         -0.10
+Sports                           338454         6.00    55333979          0.20
+Health and Medicine              295308         5.24   322451904         -0.35
+Science                          231434         4.11   504794146         -0.17
+Politics and Government          122406         2.17    23351884         -0.32
+Agriculture and Food             106792         1.89   196783469         -0.30
+Technology                       101299         1.80    42083993         -0.01
+Society                           59147         1.05    15113626          0.25
+Religion and Philosophy           52551         0.93    53902743          0.18
+Defense and Public Safety         27603         0.49     3595549          0.06
+Geography                         26388         0.47     2479507          0.04
+Transport and Infrastructure      25200         0.45     9334564          0.15
+History                           16612         0.29    63152379          0.33
+Lifestyle and Home                 8849         0.16     6903247          0.11
+Entertainment                      5473         0.10     1328051          0.02
+Travel and Tourism                 3109         0.06     1433746          0.02
+Environment and Climate            2540         0.05     1137019          0.02
+Media and Communication            2390         0.04      491742          0.01
+Energy and Natural Resources       2228         0.04      602360          0.01
+
+=== register ===
+                 documents  doc_share_%       words  word_share_%
+register                                                        
+Official          2741677        48.64  1732645427          0.24
+Journalistic      1853187        32.88   743513386          0.22
+Academic           279236         4.95  1743306581         -0.29
+Literary           263333         4.67   925141189         -0.33
+Educational        240525         4.27   731354876          0.02
+Conversational     238853         4.24    36370011         -0.11
+Mixed               19639         0.35   147923401          0.31
+Religious             477         0.01     1888322          0.03
+Technical             125         0.00      101968          0.00
+
+=== script ===
+           documents  doc_share_%       words  word_share_%
+script                                                    
+Latin       2958621        52.49  2758674745         45.51
+Cyrillic    2570625        45.60  3204102388         52.85
+Mixed        107806         1.91    99468028          1.64
+
+=== format_origin ===
+                documents  doc_share_%       words  word_share_%
+format_origin                                                  
+Digital          4465335        79.21  1900327568         31.35
+OCR              1171717        20.79  4161917593         68.65
+{
+  "documents": 5637052,
+  "words_sum_word_count_field": 6062245161,
+  "n_sources": 10,
+  "n_domains": 22,
+  "n_registers": 9,
+  "n_scripts": 3,
+  "null_counts": {
+    "source": 0,
+    "domain": 0,
+    "register": 0,
+    "script": 0,
+    "format_origin": 0,
+    "publication_year": 4571414,
+    "word_count": 0
+  },
+  "word_count_quantiles": {
+    "0.01": 20.0,
+    "0.1": 39.0,
+    "0.25": 76.0,
+    "0.5": 156.0,
+    "0.75": 381.0,
+    "0.9": 1055.0,
+    "0.99": 19826.0,
+    "0.999": 88916.0
+  }
+}

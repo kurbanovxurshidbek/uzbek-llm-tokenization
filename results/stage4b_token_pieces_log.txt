@@ -1,0 +1,35 @@
+ word mark             Qwen2.5-1.5B                           Llama-3.2-1B                  Gemma-2-2B
+     oʻzbek  ʻ ʼ         3: ·o | ʻ | zbek         4: ·o | <byte> | <byte> | zbek         4: ·o | ʻ | z | bek
+     o'zbek    '         3: ·o | ' | zbek                       3: ·o | ' | zbek         4: ·o | ' | z | bek
+     o‘zbek  ‘ ’         3: ·o | ‘ | zbek                       3: ·o | ‘ | zbek         4: ·o | ‘ | z | bek
+     o’zbek    ’         3: ·o | ’ | zbek                       3: ·o | ’ | zbek         4: ·o | ’ | z | bek
+     o`zbek    `         3: ·o | ` | zbek                       3: ·o | ` | zbek         4: ·o | ` | z | bek
+    gʻalaba  ʻ ʼ     4: ·g | ʻ | al | aba     5: ·g | <byte> | <byte> | al | aba        4: ·g | ʻ | al | aba
+    g'alaba    '        3: ·g | 'al | aba                      3: ·g | 'al | aba        4: ·g | ' | al | aba
+    g‘alaba  ‘ ’     4: ·g | ‘ | al | aba                   4: ·g | ‘ | al | aba        4: ·g | ‘ | al | aba
+    g’alaba    ’     4: ·g | ’ | al | aba                   4: ·g | ’ | al | aba        4: ·g | ’ | al | aba
+    g`alaba    `     4: ·g | ` | al | aba                   4: ·g | ` | al | aba        4: ·g | ` | al | aba
+   maʼlumot  ʻ ʼ 5: ·ma | ʼ | l | um | ot    5: ·ma | <byte> | <byte> | lum | ot       4: ·ma | ʼ | lum | ot
+   ma'lumot    '    4: ·ma | 'l | um | ot                  4: ·ma | 'l | um | ot       4: ·ma | ' | lum | ot
+   ma’lumot  ‘ ’ 5: ·ma | ’ | l | um | ot                  4: ·ma | ’ | lum | ot       4: ·ma | ’ | lum | ot
+   ma’lumot    ’ 5: ·ma | ’ | l | um | ot                  4: ·ma | ’ | lum | ot       4: ·ma | ’ | lum | ot
+   ma`lumot    ` 5: ·ma | ` | l | um | ot                  4: ·ma | ` | lum | ot       4: ·ma | ` | lum | ot
+Oʻzbekiston  ʻ ʼ 4: ·O | ʻ | zbek | iston 5: ·O | <byte> | <byte> | zbek | iston 5: ·O | ʻ | z | bek | iston
+O'zbekiston    ' 4: ·O | ' | zbek | iston               4: ·O | ' | zbek | iston 5: ·O | ' | z | bek | iston
+O‘zbekiston  ‘ ’ 4: ·O | ‘ | zbek | iston               4: ·O | ‘ | zbek | iston 5: ·O | ‘ | z | bek | iston
+O’zbekiston    ’ 4: ·O | ’ | zbek | iston               4: ·O | ’ | zbek | iston 5: ·O | ’ | z | bek | iston
+O`zbekiston    ` 4: ·O | ` | zbek | iston               4: ·O | ` | zbek | iston 5: ·O | ` | z | bek | iston
+
+Latin fertility by spelling of the mark:
+tokenizer                                                                  Qwen2.5-1.5B  Llama-3.2-1B  Gemma-2-2B more_compact_of_Qwen_Llama
+documents                                    variant                                                                                        
+Cyrillic docs transliterated to Latin        ' (ASCII U+0027)                     3.146         3.083       2.835                      Llama
+                                             ` (backtick U+0060)                  3.176         3.114       2.835                      Llama
+                                             ʻ ʼ (official U+02BB/U+02BC)         3.180         3.264       2.835                       Qwen
+                                             ‘ ’ (U+2018/U+2019)                  3.176         3.115       2.835                      Llama
+                                             ’ (U+2019 for both)                  3.160         3.088       2.835                      Llama
+Latin docs (original text, marks normalised) ' (ASCII U+0027)                     3.064         2.994       2.756                      Llama
+                                             ` (backtick U+0060)                  3.095         3.024       2.756                      Llama
+                                             ʻ ʼ (official U+02BB/U+02BC)         3.100         3.163       2.756                       Qwen
+                                             ‘ ’ (U+2018/U+2019)                  3.097         3.025       2.756                      Llama
+                                             ’ (U+2019 for both)                  3.079         2.998       2.756    
