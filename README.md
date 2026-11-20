@@ -2,7 +2,7 @@
 
 Code, annotations and run logs for the paper:
 
-> K. Kurbanov and R. M. A. Kayumbek, "Evaluating Subword Tokenization Efficiency for the Uzbek Language in Multilingual Large Language Models," 2026.
+> K. Kurbanov, "Evaluating Subword Tokenization Efficiency for the Uzbek Language in Multilingual Large Language Models," 2026.
 
 The study measures how efficiently the tokenizers of **Qwen2.5-1.5B**, **Llama-3.2-1B** and **Gemma-2-2B** encode Uzbek text in Latin and Cyrillic script. It covers fertility, the share of words split into two or more tokens (PCW), byte fragments, controlled transliteration, the spelling of the oʻ/gʻ mark, and alignment with morpheme boundaries. Only the tokenizers are loaded; no model is run.
 
